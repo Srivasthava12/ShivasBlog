@@ -1,7 +1,7 @@
 /*Initial SetUp*/
+
+
 /*color 1 : #009900*/
-
-
 
 * {
     margin: 0;
@@ -23,6 +23,16 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 h1,
@@ -48,8 +58,19 @@ h2 {
     margin-bottom: 30px;
 }
 
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #009900;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 h3 {
     font-size: 110%;
+    margin-bottom: 15px;
 }
 
 .row {
@@ -64,7 +85,6 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%)
 }
-
 
 .btn {
     display: inline-block;
@@ -82,20 +102,20 @@ h3 {
     transition: background-color 0.5s, border 0.5s;
 }
 
+
 /* .btn-full:hover,
 .btn-full:active{
     background-color: #d63031;
     border: 1px solid #d63031;
 } */
 
-
 .ripple {
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-  }
-  
-  .ripple:after {
+}
+
+.ripple:after {
     content: "";
     display: block;
     position: absolute;
@@ -110,13 +130,13 @@ h3 {
     transform: scale(10, 10);
     opacity: 0;
     transition: transform .5s, opacity 1s;
-  }
-  
-  .ripple:active:after {
+}
+
+.ripple:active:after {
     transform: scale(0, 0);
     opacity: .3;
     transition: 0s;
-  }
+}
 
 .logo {
     height: 100px;
@@ -131,7 +151,7 @@ h3 {
     margin-top: 20px;
 }
 
-.main-nav li{
+.main-nav li {
     display: inline;
     margin-left: 40px;
 }
@@ -152,7 +172,23 @@ h3 {
     border-bottom: 1px solid #009900;
 }
 
+.icons {
+    color: #16a085;
+    display: block;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
 
+.section-features .long-copy {
+    margin-bottom: 20px;
+}
 
+.section-package {
+    margin-top: 200px;
+    background-color: #e0e0e0;
+}
 
-
+.section-package .long-copy {
+    text-align: center;
+    margin-bottom: 20px;
+}
