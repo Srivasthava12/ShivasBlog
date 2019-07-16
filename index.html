@@ -3,12 +3,17 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/materialIcons.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,300italic" rel="stylesheet">
     <title>Mooch Academy</title>
 </head>
 
@@ -27,7 +32,7 @@
         </nav>
         <div class="hero-text-box">
             <h1>Trade Like a Professional. <br> Mooch Academy</h1>
-            <a class="btn btn-full ripple" href="#">Learn To Trade</a>
+            <a class="btn btn-full ripple animated bounce delay-1s" href="#">Learn To Trade</a>
         </div>
     </header>
     <section class="section-features">
@@ -54,27 +59,157 @@
             </div>
         </div>
     </section>
-    <section class="section-package">
+    <section class="section-plans">
         <div class="row">
-            <h2>Package</h2>
-            <p class="long-copy"> We provide 2 packages as show below </p>
+            <h2>Start Learning Trading Today</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 box">
-                <i class="material-icons icons">star_rate</i>
-                <h3>BASIC MEMBERSHIP</h3>
-                <p>
-                    Basics of stockmarket and 5 strategies will be taught You will be earning decent Amount of money with this </p>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Elite Membership</h3>
+                        <p class="plan-price"> ₹ 50,000 <span>/ 1 year</span></p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li> <i class="material-icons smal-icons">done</i> 1 new meal every day</li>
+                            <li> <i class="material-icons smal-icons">done</i> Order24/7 </li>
+                            <li> <i class="material-icons smal-icons">done</i> New Recipes</li>
+                            <li> <i class="material-icons smal-icons">done</i> Free Delivery</li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-full">Sign up now</a>
+                    </div>
+                </div>
             </div>
-            <div class="col span-1-of-2 box">
-                <i class="material-icons icons">stars</i>
-                <h3>ADVANCE MEMBERSHIP</h3>
-                <p> 15 strategies will be taught You will be perfect and mine money consistently from Stock market. Membership tenure 6 months
-                </p>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Advance Membership</h3>
+                        <p class="plan-price"> ₹ 30,000 <span>/ 1 year</span></p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li> <i class="material-icons smal-icons">done</i> 1 new meal every day</li>
+                            <li> <i class="material-icons smal-icons">done</i> Order24/7 </li>
+                            <li> <i class="material-icons smal-icons">done</i> New Recipes</li>
+                            <li> <i class="material-icons smal-icons">done</i> Free Delivery</li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Basic Membership</h3>
+                        <p class="plan-price"> ₹ 7,000 <span>/ 1 year</span></p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li> <i class="material-icons smal-icons">done</i> 1 new meal every day</li>
+                            <li> <i class="material-icons smal-icons">done</i> Order24/7 </li>
+                            <li> <i class="material-icons smal-icons">done</i> New Recipes</li>
+                            <li> <i class="material-icons smal-icons">done</i> Free Delivery</li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    <section class="section-form">
+        <div class="row">
+            <h2>We're Happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search</option>
+                                <option value="ad">Adertisement</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">News Letter</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" required checked /> Yes Please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop us a Line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Done" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 by theKitchen. All right reserved
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
