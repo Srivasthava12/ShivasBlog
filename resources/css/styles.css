@@ -252,6 +252,10 @@ input[type=submit]:active {
     box-shadow: 0 2px 2px #e8e8e8
 }
 
+.plan-price span {
+    font-size: 40%
+}
+
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
